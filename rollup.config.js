@@ -1,5 +1,6 @@
 // rollup.config.js
 import commonjs from "rollup-plugin-commonjs";
+import globals from 'rollup-plugin-node-globals';
 import replace from 'rollup-plugin-replace';
 import resolve from 'rollup-plugin-node-resolve';
 import typescript from 'rollup-plugin-typescript';
@@ -11,17 +12,13 @@ export default {
 
   external: ['react', 'react-dom'],
 
-  globals: {
-    'react': 'React',
-    'react-dom': 'ReactDOM'
-  },
-
   plugins: [
-    resolve({ jsnext: true, main: true}),
     commonjs(),
+    globals(),
     replace({
       'process.env.NODE_ENV': JSON.stringify('production')
     }),
+    resolve({ jsnext: true, main: true}),
     typescript({
       typescript: require('typescript')
     }),
@@ -33,7 +30,8 @@ export default {
     format: "iife",
     name: "Swipeout",
     globals: {
-      react: 'React'
+      'react': 'React',
+      'react-dom': 'ReactDOM'
     }
   }
 }
