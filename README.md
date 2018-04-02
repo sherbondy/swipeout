@@ -8,10 +8,13 @@ Externs generated using tsickle.
 rollup -c
 ```
 
-Not working properly... Resulting to hand-rolled externs...
+NOTE: This is not working properly... Resorting to hand-rolled externs...
 ```
 tsickle --externs externs.js typings/index.d.ts
 ```
+
+Also need to explicitly include styles a la:
+https://react-component.github.io/swipeout/examples/simple.css
 
 
 iOS-style swipeout buttons that appear from behind a component (web & react-native support)
