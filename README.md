@@ -1,6 +1,19 @@
 # rc-swipeout
 ---
 
+Forked to build standalone bundle with React excluded for ingestion by a cljs project.
+Externs generated using tsickle.
+
+```
+rollup -c
+```
+
+Not working properly... Resulting to hand-rolled externs...
+```
+tsickle --externs externs.js typings/index.d.ts
+```
+
+
 iOS-style swipeout buttons that appear from behind a component (web & react-native support)
 
 [![NPM version][npm-image]][npm-url]

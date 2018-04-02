@@ -70,7 +70,17 @@
     "react-dom": "^15.0.0",
     "react-native": "~0.42.0",
     "react-native-index-page": "~0.2.0",
-    "react-navigation": "1.0.0-beta.12"
+    "react-navigation": "1.0.0-beta.12",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^9.1.0",
+    "rollup-plugin-env": "^0.21.4",
+    "rollup-plugin-node-resolve": "^3.3.0",
+    "rollup-plugin-npm": "^2.0.0",
+    "rollup-plugin-typescript": "^0.8.1",
+    "rollup-plugin-uglify": "^3.0.0",
+    "tsickle": "^0.27.2",
+    "typescript": "^2.8.1"
   },
   "typings": "./lib/index.d.ts",
   "pre-commit": [
