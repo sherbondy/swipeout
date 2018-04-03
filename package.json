@@ -34,6 +34,10 @@
         "./index.js",
         "./assets/index.less"
       ]
+    },
+    "output": {
+      "library": "Swipeout",
+      "libraryTarget": "window"
     }
   },
   "scripts": {
